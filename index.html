@@ -25,14 +25,12 @@
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio">INDEX</a></li>
-            <li><a href="#sobremi">ABOUT ME</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#proyectos">PROYECTS</a></li>
-            <li><a href="#contacto">CONTACT ME</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROYECTS</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -46,11 +44,23 @@
         <h1>LAUTARO ADDAMO</h1>
         <h2>Fullstack Developer</h2>
         <div class="redes">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-discord"></i></a>
+          <a
+            href="https://instagram.com/lautaroaddamo?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/lautaroaddamo/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://wa.me/5492615073666" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://github.com/LautaroAddamo" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://discord.com/users/LautaroAddamo#6169" target="_blank"
+            ><i class="fa-brands fa-discord"></i
+          ></a>
         </div>
       </div>
     </section>
@@ -110,9 +120,9 @@
             </div>
           </div>
         </div>
-        <button>
+        <button id="cv"><a href="./assets/pdf/CV_Lautaro_Addamo.pdf" download="CV Lautaro Addamo" target="_blank">
           Download CV<i class="fa-solid fa-download"></i>
-          <span class="overlay"></span>
+          <span class="overlay"></span></a>
         </button>
       </div>
     </section>
@@ -230,19 +240,32 @@
         </div>
       </div>
     </section>
-    <!--CONTACT ME SECTION-->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACT ME</h2>
-            <div class="fila">
-                <div class="col">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone number">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--FOOTER-->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <span>Developed by Lautaro Addamo</span>
+      <div class="redes">
+        <a
+          href="https://instagram.com/lautaroaddamo?igshid=YmMyMTA2M2Y="
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/lautaroaddamo/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://wa.me/5492615073666" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://github.com/LautaroAddamo" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://discord.com/users/LautaroAddamo#6169" target="_blank"
+          ><i class="fa-brands fa-discord"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
